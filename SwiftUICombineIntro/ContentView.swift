@@ -3,7 +3,7 @@
 //  SwiftUICombineIntro
 //
 //  Created by Kaori Persson on 2022-06-10.
-//
+//  Tutorial: https://www.bravesoft.co.jp/blog/archives/15610
 
 import SwiftUI
 
