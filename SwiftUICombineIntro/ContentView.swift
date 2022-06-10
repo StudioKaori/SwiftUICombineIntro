@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = WebApiViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(spacing: 20) {
+            Text("Joke")
+            Text(viewModel.joke)
+            Button(action: viewModel.fetchJoke,
+                   label: {
+                Text("See a new joke!")
+            })
+        }.padding()
     }
 }
 
